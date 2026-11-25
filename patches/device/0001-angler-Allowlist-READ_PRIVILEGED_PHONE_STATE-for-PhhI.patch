@@ -1,0 +1,12 @@
+diff --git a/configs/permissions/privapp-permissions-me.phh.ims.xml b/configs/permissions/privapp-permissions-me.phh.ims.xml
+index 0e9135f..232328d 100644
+--- a/configs/permissions/privapp-permissions-me.phh.ims.xml
++++ b/configs/permissions/privapp-permissions-me.phh.ims.xml
+@@ -1,6 +1,7 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <permissions>
+     <privapp-permissions package="me.phh.ims">
++        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+         <permission name="android.permission.SCHEDULE_EXACT_ALARM"/>
+     </privapp-permissions>
+ </permissions>

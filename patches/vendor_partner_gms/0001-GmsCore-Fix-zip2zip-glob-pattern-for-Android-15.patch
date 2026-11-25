@@ -1,0 +1,31 @@
+diff --git a/GmsCore/Android.mk b/GmsCore/Android.mk
+index ddd24a9..ff2d199 100644
+--- a/GmsCore/Android.mk
++++ b/GmsCore/Android.mk
+@@ -52,20 +52,20 @@ DUMBOS_STRIP_GMSCORE_ABI ?= true
+ gmscore_abi_excludes :=
+ ifeq ($(DUMBOS_STRIP_GMSCORE_ABI),true)
+ ifeq ($(TARGET_ARCH),arm)
+-  gmscore_abi_excludes := -x 'lib/arm64-v8a/**' -x 'lib/x86/**' -x 'lib/x86_64/**'
++  gmscore_abi_excludes := -x 'lib/arm64-v8a/**/*' -x 'lib/x86/**/*' -x 'lib/x86_64/**/*'
+ else ifeq ($(TARGET_ARCH),arm64)
+   ifeq ($(TARGET_2ND_ARCH),arm)
+-    gmscore_abi_excludes := -x 'lib/x86/**' -x 'lib/x86_64/**'
++    gmscore_abi_excludes := -x 'lib/x86/**/*' -x 'lib/x86_64/**/*'
+   else
+-    gmscore_abi_excludes := -x 'lib/armeabi-v7a/**' -x 'lib/x86/**' -x 'lib/x86_64/**'
++    gmscore_abi_excludes := -x 'lib/armeabi-v7a/**/*' -x 'lib/x86/**/*' -x 'lib/x86_64/**/*'
+   endif
+ else ifeq ($(TARGET_ARCH),x86)
+-  gmscore_abi_excludes := -x 'lib/armeabi-v7a/**' -x 'lib/arm64-v8a/**' -x 'lib/x86_64/**'
++  gmscore_abi_excludes := -x 'lib/armeabi-v7a/**/*' -x 'lib/arm64-v8a/**/*' -x 'lib/x86_64/**/*'
+ else ifeq ($(TARGET_ARCH),x86_64)
+   ifeq ($(TARGET_2ND_ARCH),x86)
+-    gmscore_abi_excludes := -x 'lib/armeabi-v7a/**' -x 'lib/arm64-v8a/**'
++    gmscore_abi_excludes := -x 'lib/armeabi-v7a/**/*' -x 'lib/arm64-v8a/**/*'
+   else
+-    gmscore_abi_excludes := -x 'lib/armeabi-v7a/**' -x 'lib/arm64-v8a/**' -x 'lib/x86/**'
++    gmscore_abi_excludes := -x 'lib/armeabi-v7a/**/*' -x 'lib/arm64-v8a/**/*' -x 'lib/x86/**/*'
+   endif
+ endif
+ endif

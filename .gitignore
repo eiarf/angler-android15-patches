@@ -1,0 +1,6 @@
+device_huawei_angler/
+kernel_huawei_angler/
+release/
+logs/
+*.log
+__pycache__/

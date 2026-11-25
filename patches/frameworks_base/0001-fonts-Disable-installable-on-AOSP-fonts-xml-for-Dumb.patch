@@ -1,0 +1,18 @@
+diff --git a/data/fonts/Android.bp b/data/fonts/Android.bp
+index 0964aab43..9660b8a2b 100644
+--- a/data/fonts/Android.bp
++++ b/data/fonts/Android.bp
+@@ -56,11 +56,13 @@ soong_config_bool_variable {
+ prebuilt_etc {
+     name: "fonts.xml",
+     src: "fonts.xml",
++    installable: false,
+ }
+ 
+ prebuilt_etc {
+     name: "font_fallback.xml",
+     src: ":generate_font_fallback",
++    installable: false,
+ }
+ 
+ /////////////////////////////////

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Nexus 6P (angler) Device, Vendor, Kernel & IMS -->
+  <project path="device/huawei/angler" name="LineageOS-Nexus-6P/android_device_huawei_angler" remote="github" revision="lineage-22.2" />
+  <project path="vendor/huawei/angler" name="LineageOS-Nexus-6P/android_vendor_huawei_angler" remote="github" revision="lineage-22.2" />
+  <project path="kernel/huawei/angler" name="eiarf/android_kernel_huawei_angler" remote="github" revision="lineage-22.2" />
+  <project path="packages/apps/PhhIms" name="LineageOS-Nexus-6P/android_packages_apps_PhhIms" remote="github" revision="lineage-22.2" />
+
+  <!-- MSM8994 Media Donor Branch (Display is switched in prepare_server.sh to avoid remove-project wiping qcom-caf) -->
+  <project path="hardware/qcom-caf/msm8994/media" name="LineageOS-Nexus-6P/hardware_qcom_media" remote="github" revision="lineage-23.0-caf-msm8994" />
+</manifest>
